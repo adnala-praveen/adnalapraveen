@@ -53,7 +53,7 @@ export function Projects() {
                   )}
                 </div>
 
-                <div className="flex flex-1 flex-col p-7 sm:p-8">
+                <div className="flex flex-1 flex-col p-7 sm:p-8 md:[direction:ltr]">
                   <p className="text-xs uppercase tracking-[0.2em] text-accent">
                     {project.subtitle}
                   </p>
