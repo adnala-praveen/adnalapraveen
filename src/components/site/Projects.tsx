@@ -21,28 +21,23 @@ export function Projects() {
         description="Deep-dive financial analysis work, built from audited annual reports."
       />
 
-      <div className="mt-14 grid gap-7 lg:grid-cols-2">
+      <div className="mt-14 grid gap-7">
         {projects.map((project, i) => (
-          <Reveal
-            key={project.slug}
-            delay={i * 0.1}
-            className={project.featured ? "lg:col-span-2" : ""}
-          >
-            <TiltCard className="h-full" intensity={project.featured ? 4 : 7}>
+          <Reveal key={project.slug} delay={i * 0.1}>
+            <TiltCard className="h-full" intensity={4}>
               <div
-                className={
-                  project.featured ? "grid gap-0 md:grid-cols-[0.9fr_1.1fr]" : "flex h-full flex-col"
-                }
+                className={`grid gap-0 md:grid-cols-[0.9fr_1.1fr] ${
+                  project.featured ? "" : "md:[direction:rtl]"
+                }`}
               >
-                <div className="relative overflow-hidden">
+                <div className="relative overflow-hidden md:[direction:ltr]">
                   <img
                     src={covers[project.slug]}
                     alt={`${project.title} cover`}
                     loading="lazy"
-                    className={`w-full object-cover transition-transform duration-700 group-hover:scale-105 ${
-                      project.featured ? "h-full min-h-64" : "aspect-[16/9]"
-                    }`}
+                    className="h-full min-h-64 w-full object-cover transition-transform duration-700 group-hover:scale-105"
                   />
+
                   <div
                     aria-hidden
                     className="absolute inset-0"
