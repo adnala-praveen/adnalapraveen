@@ -4,7 +4,7 @@ import { profile } from "@/lib/portfolio-data";
 import { Section, SectionHeading } from "@/components/site/Section";
 import { Reveal } from "@/components/fx/Reveal";
 import { TiltCard } from "@/components/fx/TiltCard";
-import { MagneticButton } from "@/components/fx/MagneticButton";
+
 
 const socials = [
   { label: "Email", href: `mailto:${profile.email}`, Icon: Mail },
@@ -122,15 +122,13 @@ export function Contact() {
                   placeholder="Tell me about the role or project…"
                 />
               </div>
-              <MagneticButton onClick={() => undefined} className="w-full sm:w-auto">
-                <span
-                  onClick={handleSubmit}
-                  className="inline-flex items-center gap-2"
-                  role="presentation"
-                >
-                  Send message <Send className="size-4" />
-                </span>
-              </MagneticButton>
+              <button
+                type="submit"
+                className="relative inline-flex w-full items-center justify-center gap-2 overflow-hidden rounded-full px-7 py-3.5 text-sm font-semibold text-primary-foreground shadow-[0_18px_50px_-18px_var(--aurora-1)] transition-transform duration-300 hover:-translate-y-0.5 sm:w-auto"
+                style={{ backgroundImage: "var(--gradient-aurora)" }}
+              >
+                Send message <Send className="size-4" />
+              </button>
             </form>
           </TiltCard>
         </Reveal>
