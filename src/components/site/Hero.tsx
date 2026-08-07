@@ -56,9 +56,14 @@ export function Hero() {
 
           <h1 className="mt-6 font-display text-[13vw] font-semibold leading-[0.92] sm:text-6xl md:text-7xl lg:text-[5.2rem]">
             <RevealText text="Hi, I'm" delay={1.4} className="block text-foreground/70" />
-            <span className="text-gradient block">
-              <RevealText text={profile.firstName} delay={1.6} />
-            </span>
+            <motion.span
+              className="text-gradient block"
+              initial={{ opacity: 0, y: "0.4em", filter: "blur(10px)" }}
+              animate={{ opacity: 1, y: 0, filter: "blur(0px)" }}
+              transition={{ duration: 0.9, delay: 1.6, ease: [0.22, 1, 0.36, 1] }}
+            >
+              {profile.firstName}
+            </motion.span>
           </h1>
 
           <p className="mt-5 font-display text-xl font-medium sm:text-2xl md:text-3xl">
