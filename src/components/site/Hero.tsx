@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { motion } from "motion/react";
 import { ArrowDown, Download, Mail, Sparkles } from "lucide-react";
 import { profile, stats } from "@/lib/portfolio-data";
-import suitePhoto from "@/assets/praveen-suite.png.asset.json";
+import suitePhoto from "@/assets/praveen-suite-new.png.asset.json";
 import { MagneticButton } from "@/components/fx/MagneticButton";
 import { Counter } from "@/components/fx/Counter";
 import { RevealText } from "@/components/fx/Reveal";

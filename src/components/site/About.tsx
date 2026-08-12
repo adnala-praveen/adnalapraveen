@@ -3,7 +3,7 @@ import { Section, SectionHeading } from "@/components/site/Section";
 import { Reveal } from "@/components/fx/Reveal";
 import { TiltCard } from "@/components/fx/TiltCard";
 import { Award, BrainCircuit, Gauge, Layers } from "lucide-react";
-import suitePhoto from "@/assets/praveen-suite-new.png.asset.json";
+import suitePhoto from "@/assets/praveen-suite.png.asset.json";
 
 const icons = [BrainCircuit, Layers, Gauge, Award];
 
