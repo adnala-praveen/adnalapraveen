@@ -19,7 +19,8 @@ import { TiltCard } from "@/components/fx/TiltCard";
 import { Counter } from "@/components/fx/Counter";
 import { Chip, Section, SectionHeading } from "@/components/site/Section";
 import { Footer } from "@/components/site/Footer";
-import cover from "@/assets/project-sbi.jpg";
+import coverAsset from "@/assets/project-sbi.png.asset.json";
+const cover = coverAsset.url;
 
 const title = "Financial Performance Analysis of State Bank of India — Praveen Adnala";
 const description =

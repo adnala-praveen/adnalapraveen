@@ -4,12 +4,12 @@ import { projects } from "@/lib/portfolio-data";
 import { Chip, Section, SectionHeading } from "@/components/site/Section";
 import { Reveal } from "@/components/fx/Reveal";
 import { TiltCard } from "@/components/fx/TiltCard";
-import sbiCover from "@/assets/project-sbi.jpg";
-import drlCover from "@/assets/project-drl.jpg";
+import sbiCover from "@/assets/project-sbi.png.asset.json";
+import drlCover from "@/assets/project-drl.png.asset.json";
 
 const covers: Record<string, string> = {
-  sbi: sbiCover,
-  "dr-reddys": drlCover,
+  sbi: sbiCover.url,
+  "dr-reddys": drlCover.url,
 };
 
 export function Projects() {
