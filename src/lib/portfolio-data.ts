@@ -70,8 +70,7 @@ export const education = [
     degree: "MBA (Finance)",
     school: "MRCET",
     detail: "Aggregate: 8.80",
-    period: "Completed",
-    badge: "Post Graduation Completed",
+    period: "2024 - 2026",
     highlight: true,
   },
   {
