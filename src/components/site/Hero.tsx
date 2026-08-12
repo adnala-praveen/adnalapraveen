@@ -134,10 +134,10 @@ export function Hero() {
           />
           <div className="glass-strong relative overflow-hidden rounded-[2.5rem] p-3">
             <img
-              src={profile.photo}
+              src={suitePhoto.url}
               alt={`${profile.name}, finance analyst and accountant`}
               loading="eager"
-              className="aspect-[4/5] w-full rounded-[2rem] object-cover object-top"
+              className="aspect-[4/5] w-full rounded-[2rem] object-cover object-[center_15%]"
             />
             <div
               aria-hidden

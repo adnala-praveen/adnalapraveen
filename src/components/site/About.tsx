@@ -23,7 +23,7 @@ export function About() {
               src={suitePhoto.url}
               alt="Praveen Adnala at work"
               loading="lazy"
-              className="aspect-[4/3] w-full rounded-[1.4rem] object-cover"
+              className="aspect-[4/3] w-full rounded-[1.4rem] object-cover object-[center_25%]"
             />
             <div className="p-6">
               <p className="font-display text-lg font-semibold">Career summary</p>
