@@ -3,6 +3,7 @@ import { Section, SectionHeading } from "@/components/site/Section";
 import { Reveal } from "@/components/fx/Reveal";
 import { TiltCard } from "@/components/fx/TiltCard";
 import { Award, BrainCircuit, Gauge, Layers } from "lucide-react";
+import suitePhoto from "@/assets/praveen-suite.png.asset.json";
 
 const icons = [BrainCircuit, Layers, Gauge, Award];
 
@@ -19,7 +20,7 @@ export function About() {
         <Reveal>
           <TiltCard className="h-full p-2">
             <img
-              src={profile.photoAlt}
+              src={suitePhoto.url}
               alt="Praveen Adnala at work"
               loading="lazy"
               className="aspect-[4/3] w-full rounded-[1.4rem] object-cover"

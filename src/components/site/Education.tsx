@@ -53,11 +53,6 @@ export function Education() {
                       <p className="mt-1 text-sm text-muted-foreground">
                         {item.school} · {item.detail}
                       </p>
-                      {item.badge && (
-                        <span className="mt-3 inline-flex rounded-full border border-gold/40 bg-gold/10 px-3 py-1 text-[11px] font-semibold uppercase tracking-wider text-gold">
-                          {item.badge}
-                        </span>
-                      )}
                     </div>
                   </div>
                   <span className="glass rounded-full px-3.5 py-1.5 text-xs font-medium text-muted-foreground">
